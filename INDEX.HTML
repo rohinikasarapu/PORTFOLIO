@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohini | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --accent: #6366f1;
+      --card: #f3f4f6;
+      --dark-bg: #1e293b;
+      --dark-text: #f1f5f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background-color: var(--card);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: var(--accent);
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 10%;
+      background: linear-gradient(to right, #c084fc, #818cf8);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: white;
+      color: #4f46e5;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .section {
+      padding: 60px 10%;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--accent);
+    }
+
+    .skills label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .skills .bar {
+      height: 10px;
+      background: #d1d5db;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .skills .bar div {
+      height: 100%;
+      background: var(--accent);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--card);
+    }
+
+    .certificates ul, .interests ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .certificates li, .interests li {
+      margin-bottom: 8px;
+    }
+
+    .workshops ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    .workshops li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rohini</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#interests">Interests</a>
+      <a href="#workshops">Workshops</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm Rohini</h2>
+    <p>Front-End Developer | AI Learner | Tech Enthusiast</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I build clean, responsive web apps using HTML, CSS, JavaScript, and React. I'm passionate about AI and tech-driven innovation.</p>
+    <div class="skills">
+      <label>HTML</label><div class="bar"><div style="width: 95%"></div></div>
+      <label>CSS</label><div class="bar"><div style="width: 90%"></div></div>
+      <label>JavaScript</label><div class="bar"><div style="width: 85%"></div></div>
+      <label>React</label><div class="bar"><div style="width: 80%"></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Scientific Calculator</h3>
+        <p>A stylish calculator supporting arithmetic and scientific functions.</p>
+      </div>
+      <div class="card">
+        <h3>Student Dashboard</h3>
+        <p>Connects students by interest and tracks learning paths.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>This very portfolio, showcasing skills, projects, and certificates.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="section certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <li>Google Cloud Generative AI - 2024</li>
+      <li>Microsoft Azure AI Fundamentals - 2025</li>
+      <li>Infosys Springboard Full Stack Development - 2025</li>
+      <li>Cybersecurity & Ethical Hacking - Cybertherya</li>
+      <li>Power BI Workshop - Talentio</li>
+    </ul>
+  </section>
+
+  <section id="interests" class="section interests">
+    <h2>Interests</h2>
+    <ul>
+      <li>Artificial Intelligence and Machine Learning</li>
+      <li>UI/UX Design and Web Development</li>
+      <li>Hackathons and Coding Challenges</li>
+      <li>Cloud Technologies</li>
+    </ul>
+  </section>
+
+  <section id="workshops" class="section workshops">
+    <h2>Workshops</h2>
+    <ul>
+      <li>Cybersecurity & Ethical Hacking - Cybertherya (2-day workshop, Sep 2024)</li>
+      <li>Power BI Workshop - Talentio (3-day workshop, Oct 2024)</li>
+      <li>Java Full Stack with React JS and AI - Dec 2024</li>
+      <li>GDG Tech Winter Break - Front-End, Cloud Security, AI for Cybersecurity (Dec 2024)</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rohini | Portfolio</p>
+  </footer>
+</body>
+</html>
